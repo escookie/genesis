@@ -1,0 +1,18 @@
+footer { background-color: black; color: white; padding: 80px; } 
+.footer-box { display: flex; flex-wrap: wrap; justify-content: space-between; } 
+
+.footer-1 { display: flex; flex-wrap: wrap; } 
+@media screen and (max-width: 600px){
+ .footer-1 { display: inline-block; } 
+ }
+.footer-1 a { display: block; padding: 15px; } 
+.footer-1 div { display: block; padding: 15px; } 
+
+
+.footer-2 { width: 100%; display: flex; justify-content: space-between; margin-top: 70px; } 
+
+.footer-2 a { margin: 5px 10px; color: #919496; } 
+.footer-2 a:hover { color: #fff; } 
+
+.footer-3 { display: flex; color: #919496; text-align: right; } 
+.footer-3 > .footer-icon > a > i { font-size: 24px; }

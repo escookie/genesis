@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제네시스(Genesis)</title>
+    <script src="https://kit.fontawesome.com/5622f2ba18.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/place-holder.js"></script>
+</head>
+<body>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <div id="nav-placeholder"></div>
+
+    <section class="section-1">
+        <div class="swiper-container">            
+            <div class="swiper-upper">
+                <div class="swiper-button-prev">prev</div>
+                <div class="swiper-button-next">next</div>                
+            </div>            
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('/images/main1.jpg');">
+                    <div>
+                        <div>GENESIS</div>
+                        <div>MAGMA</div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('/images/main2.jpg');">
+                    <div>
+                        <div>GENESIS</div>
+                        <div>X GRAN BERLINETTA</div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('/images/main3.jpg');">
+                    <div>
+                        <div>GENESIS</div>
+                        <div>ELECTRIFIED G80</div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('/images/main4.jpg');">
+                    <div>
+                        <div>GENESIS</div>
+                        <div>NEOLUN CONCEPT</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true, // 슬라이더를 루프시키려면
+            autoplay: {
+                delay: 7000, // 각 슬라이드의 자동 재생 시간 (밀리초)
+                disableOnInteraction: false, // 사용자 상호작용 후 자동 재생이 중지되지 않도록 설정
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            effect: 'slide', // 슬라이드 효과 (기본값: 'slide')
+        });
+    </script>
+
+    <section class="section-2">
+        <div>
+            <div>OUR MODELS</div>
+            <div>역동적이면서도 우아한 디자인과 최첨단 기술을 탑재한 제네시스 브랜드의 라인업을 살펴보세요.</div>
+        </div>
+        <div class="section-2-box">
+            <div>
+                <div>G90 BLACK</div>
+                <div><img src="/images/car1.png" alt=""></div>
+                <button>자세히보기</button>
+            </div>
+            <div>
+                <div>G90 <span>Long wheel base</span></div>
+                <div><img src="images/car2.png" alt=""></div>
+                <button>자세히보기</button>
+            </div>
+            <div>
+                <div>G90 WHITE</div>
+                <div><img src="images/car3.png" alt=""></div>
+                <button>자세히보기</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+    
+    
+</body>
+</html>

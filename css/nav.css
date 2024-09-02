@@ -1,0 +1,32 @@
+
+nav {
+  height: 80px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;    
+  list-style-type: none;    
+  }
+nav div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+nav img {
+  width: 120px;
+  height: 25px;
+}
+nav li {
+  color: #bbb;
+  padding: 28px 17px;
+}
+
+.logo{
+  padding-top: 1%;
+}
