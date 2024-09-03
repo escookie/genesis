@@ -25,16 +25,17 @@ ul { list-style-type: none; }
     flex-direction: column;
 }
 .swiper-slide>div{
-    padding-right: 50%;
+    padding-right: 55%;
     padding-bottom: 30%;
 
 }
 .swiper-slide>div>div:nth-child(1){    
     color: #fff;
+    font-size: clamp(1rem, 1vw, 1rem);
 }
 .swiper-slide>div>div:nth-child(2){    
     color: #fff;
-    font-size: clamp(3rem, 3vw, 3rem);
+    font-size: clamp(3.5rem, 3.5vw, 3.5rem);
 }
 .swiper-upper {
     position: absolute;
@@ -130,4 +131,14 @@ ul { list-style-type: none; }
 
 .swiper-pagination-bullet-active {
     background: #8b8b8b;
+}
+
+.swiper-line {
+    border-top: 2px solid white;
+    height: 8%;
+    border-bottom: 2px solid white;
+    position: absolute;
+    top: 34vh;    
+    left: 0;
+    width: 18%; /* 라인의 길이를 부모 요소의 너비로 설정 */
 }
