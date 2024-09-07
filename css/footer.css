@@ -1,4 +1,4 @@
-footer { background-color: black; color: white; padding: 80px; display: flex; flex-direction: column; justify-content: center; align-items: center;} 
+footer { background-color: #111; color: white; padding: 80px; display: flex; flex-direction: column; justify-content: center; align-items: center;} 
 .footer-box { display: flex; flex-wrap: wrap; justify-content: space-between; width: 80%;} 
 
 .footer-1 { display: flex; flex-wrap: wrap; } 
