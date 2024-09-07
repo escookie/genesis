@@ -1,0 +1,35 @@
+main{display: flex; flex-direction: column;align-items: center;}
+section{width: 70%;}
+
+/* section-1 */
+section:nth-child(1) > div {
+    padding-top: 5%;
+    font-size: clamp(3rem, 3vw, 3rem);
+    padding-bottom: 5%;
+}
+
+/* section-2 */
+section:nth-child(2) {
+    display: flex;
+}
+section:nth-child(2)>div>div:nth-child(1){width: 60%; color: #999; padding-bottom: 5%;}
+section:nth-child(2)>div>div:nth-child(1) span{border: 1px solid #999; padding: 3% 5%; font-size: clamp(0.7rem, 0.7vw, 0.7rem);}
+section:nth-child(2)>div>div:nth-child(2){width: 40%; font-size: clamp(4rem, 4vw, 4rem);
+    font-family: "SUSE", sans-serif; padding-bottom: 7%;}
+section:nth-child(2)>div img{width: 600px;}
+section:nth-child(2)>div>div:nth-child(3) button{background-color: black; 
+    border: 1px solid white; color: white;padding: 4% 20%; font-size: large;}
+
+/* section-3 */
+section:nth-child(3){display: flex; padding-top: 5%;padding-bottom: 3%;}
+section:nth-child(3)>div{width: 25%;text-align: center;border-bottom: 1px solid #383838; padding-bottom: 2%;}
+section:nth-child(3)>div:first-child{border-bottom: 1px solid #b3b3b3;}
+
+/* div-4 */
+.purchase-container {display: flex; padding: 3% 5%;}
+.purchase-container>div{background-color: #1c1c1c; color: #777777; margin: 0 1%; padding: 5% 1.5%;}
+.purchase-container>div>div:nth-child(1){font-size: clamp(1.5rem,1.5vw,1.5rem);}
+.purchase-container>div>div:nth-child(2){font-size: small;padding-top: 1%;}
+.purchase-container img{width: 100%}
+
+.purchase-container>div:nth-child(1){color: white;}
