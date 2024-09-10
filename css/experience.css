@@ -34,7 +34,7 @@ section:nth-child(2)>div>div:nth-child(4)>div { border: 1px solid #ffffff; backg
 section:nth-child(3)>div:first-child { font-size: clamp(2rem, 2vw, 2rem); padding: 3% 0; } 
 
 .experience-table { display: flex; flex-direction: column;} 
-.row { display: flex; } 
+.row { display: flex; }
 .cell { flex: 1; /* 각 셀이 균등하게 */ padding: 15px 0; text-align: center;
     border-bottom: 1px solid #3c3c3c;} 
 

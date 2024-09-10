@@ -10,7 +10,47 @@
 </head>
 <body>
     <div id="nav-placeholder"></div>
-    구매
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedText = document.querySelector('.animated-text');
+    
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animatedText.classList.add('visible');
+                        observer.unobserve(animatedText); // 한 번만 애니메이션을 실행한 후, 관찰을 중지합니다.
+                    }
+                });
+            }, { threshold: 0.1 });
+    
+            observer.observe(animatedText);
+        });
+    </script>
+    <main>
+        <section class="video-background">
+            <div class="text-overlay">
+                <div class="title">GENESIS BRAND</div>
+                <div class="description">제네시스라는 이름에는 열망의 창조,
+                    새로운 시작과 긍정적인 변화를 향한 우리의 염원이 담겨 있습니다.</div>
+            </div>
+            <video autoplay muted loop playsinline>
+                <source src="/images/genesis/pc-movie.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        <section>
+            <div class="animated-text">
+                <div>Our Vision and Mission</div>
+                <div>우리는 자신만의 취향과 안목을 가진 사람들을 위해 최상의 자동차를 만들고, 그를 통해 삶의 긍정적인 변화를 만들어내는 것을 목표로 하고 있습니다.</div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <div>Our Way</div>
+                <div>새로운 길을 끊임없이, 그렇지만 사려 깊은 방식으로 탐험하는 것이 진정으로 매력적인 것을 만들어내는 우리만의 방식입니다.</div>
+            </div>
+        </section>
+    </main>
     <div id="footer-placeholder"></div>
     
 </body>
