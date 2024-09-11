@@ -29,13 +29,20 @@ ul { list-style-type: none; }
     padding-bottom: 30%;
 
 }
+@media screen and (max-width:600px) {
+    .swiper-slide>div{
+        width: 70%;
+        padding-right: 0%;
+        padding-bottom: 140%;
+    }
+}
 .swiper-slide>div>div:nth-child(1){    
     color: #fff;
     font-size: clamp(1rem, 1vw, 1rem);
 }
 .swiper-slide>div>div:nth-child(2){    
     color: #fff;
-    font-size: clamp(3.5rem, 3.5vw, 3.5rem);
+    font-size: clamp(2rem, 3.5vw, 3.5rem);
 }
 .swiper-upper {
     position: absolute;
@@ -71,7 +78,10 @@ ul { list-style-type: none; }
     width: 70%;
 }
 .section-2>div:nth-child(1)>div:nth-child(1){
-    font-size: clamp(3rem, 3vw, 3rem);
+    font-size: clamp(2rem, 3vw, 3rem);
+}
+@media screen and (max-width:600px) {
+    .section-2>div:nth-child(1)>div:nth-child(1){padding-top: 15%;}
 }
 
 .section-2-box{
@@ -85,8 +95,20 @@ ul { list-style-type: none; }
     background-color: #151515;
     text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+    .section-2-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-2-box>div {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+}
+
 .section-2-box>div>div:nth-child(1){
-    font-size: clamp(1.8rem, 1.8vw, 1.8rem);
+    font-size: clamp(1rem, 1.8vw, 1.8rem);
     color: #bbb;
     text-align: left;
     padding-left: 5%;
