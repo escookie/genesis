@@ -2,7 +2,7 @@ main { display: flex; flex-direction: column; align-items: center; text-align: c
 section { width: 90%; } 
 
 /* section-1 */
-section:nth-child(1) > div:first-child { padding-top: 3%; font-size: clamp(3rem, 3vw, 3rem); } 
+section:nth-child(1) > div:first-child { padding-top: 3%; font-size: clamp(2rem, 3vw, 3rem); } 
 section:nth-child(1) > div:nth-child(2) { padding-top: 1%; font-size: medium; } 
 
 /* section-2 */
@@ -10,6 +10,12 @@ section:nth-child(2) { display: flex; padding-top: 4%; }
 section:nth-child(2)>div { width: 50%; padding: 4%; margin: 2%; } 
 section:nth-child(2)>div:nth-child(1) { background-image: url('../images/experience/back1.jpg'); background-size: cover; } 
 section:nth-child(2)>div:nth-child(2) { background-image: url('../images/experience/back2.jpg'); background-size: cover; } 
+@media screen and (max-width:600px) {
+    section:nth-child(2) { flex-direction: column} 
+    section:nth-child(2)>div{width: 89%; padding: 8% 5%; margin: 5% 0;}
+    section:nth-child(2)>div>div:nth-child(3){font-size: small; padding: 0 10%;}
+}
+
 
 /* section-2 background 어둡게 */
 section:nth-child(2)>div:nth-child(1),
@@ -22,7 +28,7 @@ section:nth-child(2) > div > * { position: relative; z-index: 2; /* 글자가 �
  color: white; /* 글자 색상을 흰색으로 설정 */ } 
 
 /* section-2 font */
-section:nth-child(2)>div>div:nth-child(1) { font-size: clamp(2rem, 2vw, 2rem); } 
+section:nth-child(2)>div>div:nth-child(1) { font-size: clamp(1.5rem, 2vw, 2rem); } 
 section:nth-child(2)>div>div:nth-child(2),
 section:nth-child(2)>div>div:nth-child(3) { padding-top: 3% } 
 
@@ -44,3 +50,7 @@ section:nth-child(3)>div:first-child { font-size: clamp(2rem, 2vw, 2rem); paddin
 .cell:nth-child(3) { flex: 0 0 30% ;text-align: left}
 
 .row:nth-child(1){border-top: 1px solid #c8c8c8;}
+
+@media screen and (max-width:600px) {
+    .experience-table{padding: 0 3%; font-size: small;}
+}
