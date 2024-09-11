@@ -30,10 +30,13 @@ ul { list-style-type: none; }
 
 }
 @media screen and (max-width:600px) {
+    .swiper-container{width: 360px; height: 460px; overflow: hidden;}
+    .swiper-slide{height: 30%;}
     .swiper-slide>div{
-        width: 70%;
+        width: 75%;
+        padding-top: 20%;
         padding-right: 0%;
-        padding-bottom: 140%;
+        padding-bottom: 100%;
     }
 }
 .swiper-slide>div>div:nth-child(1){    
@@ -140,6 +143,11 @@ ul { list-style-type: none; }
     transform: translateX(-50%);
     display: flex;
     gap: 8px; /* 각 점 사이의 간격 설정 */
+}
+@media screen and (max-width:600px) {
+    .swiper-pagination {
+        bottom: 5%; /* 슬라이더 하단에 위치하도록 설정 */
+    }
 }
 
 .swiper-pagination-bullet {

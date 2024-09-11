@@ -35,7 +35,7 @@ nav li {
 
 @media screen and (max-width:600px) {
   .pc-nav{display: none;}
-  .mobile-nav{display: flex;flex-wrap: wrap;justify-content: center;padding: 5% 0;}
+  .mobile-nav{display: flex;flex-wrap: wrap;justify-content: center;padding: 7% 0;}
   .mobile-nav>div{padding: 0 3%}
   .mobile-logo {
     width: 100%;
