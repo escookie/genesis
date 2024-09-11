@@ -1,18 +1,30 @@
-footer { background-color: #111; color: white; padding: 80px; display: flex; flex-direction: column; justify-content: center; align-items: center;} 
-.footer-box { display: flex; flex-wrap: wrap; justify-content: space-between; width: 80%;} 
+footer { background-color: #111; color: white; padding: 80px; display: flex; flex-direction: column; justify-content: center; align-items: center; } 
+.footer-box { display: flex; flex-wrap: wrap; justify-content: space-between; width: 80%; } 
 
-.footer-1 { display: flex; flex-wrap: wrap; } 
-@media screen and (max-width: 600px){
- .footer-1 { display: inline-block; } 
- }
+.footer-1 { display: flex; flex-wrap: wrap; }
+.footer-1>div>div:nth-child(1){padding: 0 35px;}
 .footer-1 a { display: block; padding: 15px; } 
 .footer-1 div { display: block; padding: 15px; } 
 
 
-.footer-2 { width: 100%; display: flex; justify-content: space-between; margin-top: 70px; } 
+.footer-2 { width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 70px; } 
+.footer-2-in { display: flex; flex-wrap: wrap; /* 중앙 정렬 */ width: 100%; margin-bottom: 20px; /* 하단 여백 */}
 
 .footer-2 a { margin: 5px 10px; color: #919496; } 
 .footer-2 a:hover { color: #fff; } 
 
-.footer-3 { display: flex; color: #919496; text-align: right; } 
-.footer-3 > .footer-icon > a > i { font-size: 24px; }
+.footer-3 { display: flex; color: #919496; text-align: right;} 
+.footer-3 > .footer-icon > a > i { font-size: 24px; } 
+
+@media screen and (max-width: 600px) { 
+    footer { padding: 30px 0; /* 모바일에서는 패딩을 줄이기 */} 
+    .footer-1 { display: grid; grid-template-columns: 1fr 1fr;}
+    .footer-1 a { text-align: center; padding: 10px ;} 
+    .footer-1 div {text-align: center; padding: 10px;}
+    .footer-2-in{justify-content: center;}
+    .footer-3 {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+ }
